@@ -35,4 +35,5 @@ AI-powered automation gateway running on macOS with Telegram integration.
 1. Clone this repo
 2. Copy template to your local OpenClaw config:
    ```bash
-   cp config.template.json ~/.openclaw/openclaw.json
+
+cp config.template.json ~/.openclaw/openclaw.json
