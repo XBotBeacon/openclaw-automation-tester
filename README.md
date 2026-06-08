@@ -20,7 +20,7 @@ AI-powered automation gateway running on macOS with Telegram integration.
 - [x] Gateway running locally
 - [x] Telegram bot connected and paired
 - [x] OpenAI API integration working
-- [ ] Supreme drop monitor (in progress)
+- [x] Supreme drop monitor (basic scraper built, testing selectors)
 - [ ] Arduino error decoder (in progress)
 - [ ] Daily activity logger (planned)
 
@@ -37,3 +37,12 @@ AI-powered automation gateway running on macOS with Telegram integration.
    ```bash
 
 cp config.template.json ~/.openclaw/openclaw.json
+
+## Automations
+
+### Supreme Drop Monitor
+- **File:** `supreme_monitor.py`
+- **What it does:** Checks Supreme's new releases page for items and prices
+- **How to run:** `python supreme_monitor.py`
+- **Status:** Basic scraper built, needs real HTML selectors from live site
+- **Next step:** Connect to OpenClaw scheduler to run daily at 8 AM
