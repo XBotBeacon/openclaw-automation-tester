@@ -5,7 +5,7 @@ AI-powered automation gateway running on macOS with Telegram integration.
 ## What I Built
 
 - **Local Gateway:** OpenClaw running on Apple M2 (8GB RAM) via Node.js/nvm
-- **AI Backend:** OpenAI GPT-4o-mini API (switched from local Ollama due to memory constraints)
+- **AI Backend:** OpenAI GPT-4o-mini API ($5 prepaid tier, ~5,000+ messages)
 - **Mobile Interface:** Telegram bot for on-the-go access and notifications
 - **Security:** API keys stored locally, never committed to Git
 
