@@ -1,0 +1,12 @@
+# Secrets
+*.env
+.env.local
+config.json
+openclaw.json
+
+# System files
+.DS_Store
+*.log
+
+# Node modules (if you add custom scripts)
+node_modules/

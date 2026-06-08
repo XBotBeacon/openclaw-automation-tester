@@ -1,0 +1,43 @@
+{
+  "gateway": {
+    "mode": "local"
+  },
+  "models": {
+    "providers": {
+      "openai": {
+        "apiKey": "REPLACE_WITH_YOUR_OPENAI_KEY",
+        "models": [
+          {
+            "id": "gpt-4o-mini",
+            "name": "GPT-4o Mini",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0.15, "output": 0.6, "cacheRead": 0.075, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/gpt-4o-mini"
+      },
+      "memorySearch": {
+        "enabled": false
+      }
+    }
+  },
+  "commands": {
+    "ownerAllowFrom": ["local:admin"]
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "REPLACE_WITH_YOUR_BOT_TOKEN",
+      "dmPolicy": "pairing"
+    }
+  }
+}
